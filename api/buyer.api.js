@@ -29,7 +29,7 @@ const createBuyer = async (req,res)=>{
             password,
             role
         });
-       return res.status(201).json({msg:"New buyer added"},buyer);
+       return res.status(201).json({msg:"New buyer added", buyer});
     } catch (err) {
         console.log(err);
         res.json(err);

@@ -6,7 +6,7 @@ const createAdmin = async (req,res)=>{
         if(!userName || !password){
             return res.status(400).json({
                 success: false,
-                msg:'Password and email are required'})
+                msg:'Password and userName are required'})
         }
         if(password.length<8){
             return res.status(400).json({
